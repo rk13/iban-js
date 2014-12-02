@@ -1,5 +1,6 @@
+
 // iban.html & iban.js 1.5 - Create or check International Bank Account Numbers
-// Copyright (C) 2002-2010, Thomas G¸nther <tom@toms-cafe.de>
+// Copyright (C) 2002-2010, Thomas G√ºnther <tom@toms-cafe.de>
 
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -59,6 +60,7 @@ function Country(name, code, bank_form, acc_form)
   //   code      - Country Code from ISO 3166
   //   bank_form - Format of bank/branch code part (e.g. "0 4a 0 ")
   //   acc_form  - Format of account number part (e.g. "0  11  2n")
+
 
   this.name      = name;
   this.code      = code;
@@ -196,7 +198,7 @@ function fill0(s, l)
 // Compare two strings respecting german umlauts.
 function strcmp(s1, s2)
 {
-  var chars = "Aaƒ‰BbCcDdEeFfGgHhIiJjKkLlMmNnOo÷ˆPpQqRrSsﬂTtUu‹¸VvWwXxYyZz";
+  var chars = "Aa√Ñ√§BbCcDdEeFfGgHhIiJjKkLlMmNnOo√ñ√∂PpQqRrSs√üTtUu√ú√ºVvWwXxYyZz";
   var lng = (s1.length < s2.length) ? s1.length : s2.length;
   for (var i = 0; i < lng; ++i)
   {
